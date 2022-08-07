@@ -2,37 +2,49 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* style for CRUD Operation */
+h1 {
+  color: #3e4148;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user {
+  font-style: italic;
+  font-weight: lighter;
+  color: white;
+}
+form {
+  background-color: #53565d;
+  padding: 1.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #282c34;
+  color: white;
+}
+.btnCrud {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #3e4148;
+  color: white;
+  background-color: #a9abae;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnCrud:hover {
+  color: #53565d;
+  background-color: #d4d5d6;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 20rem;
 }
